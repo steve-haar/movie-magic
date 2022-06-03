@@ -18,7 +18,9 @@
     "test": "turbo run test",
     "clean": "turbo run clean && rimraf node_modules",
     "prepare": "husky install",
-    "format": "prettier --write \"**/README.md\" \"**/src/**/*.{js,jsx,ts,tsx,json}\""
+    "format": "prettier --write \"**/README.md\" \"**/src/**/*.{js,jsx,ts,tsx,json}\"",
+    "storybook": "cd storybook && npm run storybook",
+    "build-storybook": "cd storybook && build-storybook -s public"
   },
   "devDependencies": {
     "husky": "^8.0.1",
