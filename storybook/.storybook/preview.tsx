@@ -1,6 +1,4 @@
-// Import any required css here
-// Example:
-// import '../../packages/ui-lib/src/styles/main.css';
+import '../../packages/ui-lib/src/styles/main.css';
 
 export const parameters = {
   // Show calls to "on*" arguments (based on user actions) in the Actions panel

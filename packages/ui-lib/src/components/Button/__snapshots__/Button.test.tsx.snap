@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> class can be added via rootClass prop 1`] = `
+<DocumentFragment>
+  <button
+    class="ml-2 button button--default"
+  >
+    Submit
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Button /> colors render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="button button--default"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--primary"
+    >
+      Submit
+    </button>
+    <button
+      class="button button--secondary"
+    >
+      Submit
+    </button>
+  </div>
+</DocumentFragment>
+`;
