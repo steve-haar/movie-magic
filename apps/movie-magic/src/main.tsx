@@ -1,8 +1,12 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { App } from './App';
 import './styles/main.css';
+
+// Create a react-query client
+const queryClient = new QueryClient();
 
 // Start mock service worker in dev environment
 async function startMockServiceWorker() {
@@ -20,9 +24,11 @@ startMockServiceWorker().then(() => {
 
   root.render(
     <React.StrictMode>
-      <Router>
-        <App />
-      </Router>
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <App />
+        </Router>
+      </QueryClientProvider>
     </React.StrictMode>
   );
 });
