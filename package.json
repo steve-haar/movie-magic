@@ -33,6 +33,10 @@
     "rimraf": "^3.0.2",
     "turbo": "latest"
   },
+  "overrides": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json}": "prettier --write"
   },
