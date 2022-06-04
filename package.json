@@ -1,6 +1,6 @@
 {
   "name": "movie-magic",
-  "description": "",
+  "description": "An example of using Code Shaper to generate a React app",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
