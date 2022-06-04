@@ -5,6 +5,8 @@ instructions to create this app, visit
 [Getting Started](https://www.code-shaper.dev/docs/getting-started/overview)
 in Code Shaper docs.
 
+![Home Page](assets/home-page.png)
+
 ## Running the App
 
 Execute the following commands to build and run the app.
