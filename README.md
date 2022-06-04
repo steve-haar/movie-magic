@@ -9,7 +9,7 @@ in Code Shaper docs.
 
 ## Running the App
 
-Execute the following commands to build and run the app.
+Execute the following commands to run the app.
 
 ```shell
 # In the root directory, install dependencies
