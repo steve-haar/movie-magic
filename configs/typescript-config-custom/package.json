@@ -5,7 +5,8 @@
   "main": "index.js",
   "files": [
     "base.json",
-    "react-library.json"
+    "react-library.json",
+    "typescript-library.json"
   ],
   "publishConfig": {
     "access": "public"

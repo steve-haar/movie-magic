@@ -2,8 +2,8 @@
 
 An example of using Code Shaper to generate a React app. To see step-by-step
 instructions to create this app, visit
-[Getting Started](https://www.code-shaper.dev/docs/getting-started/overview)
-in Code Shaper docs.
+[Getting Started](https://www.code-shaper.dev/docs/getting-started/overview) in
+Code Shaper docs.
 
 ![Home Page](assets/home-page.png)
 

@@ -23,10 +23,11 @@
     "build-storybook": "cd storybook && build-storybook -s public"
   },
   "devDependencies": {
-    "@code-shaper/plugin": "^0.0.11",
-    "@code-shaper/react": "^0.0.11",
-    "@code-shaper/shaper-utils": "^0.0.14",
-    "@code-shaper/typescript": "^0.0.11",
+    "@code-shaper/express": "^0.0.14",
+    "@code-shaper/plugin": "^0.0.14",
+    "@code-shaper/react": "^0.0.14",
+    "@code-shaper/shaper-utils": "^0.0.15",
+    "@code-shaper/typescript": "^0.0.14",
     "@movie-magic/react-patterns": "*",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.2",
