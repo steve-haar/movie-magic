@@ -29,6 +29,7 @@ async function generateFetchHook(inputOptions: Options) {
     {
       type: 'directory',
       name: 'parentDir',
+      pageSize: 20,
       message: 'Parent directory?',
       basePath: '.',
     },

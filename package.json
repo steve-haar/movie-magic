@@ -20,7 +20,8 @@
     "prepare": "husky install",
     "format": "prettier --write \"**/README.md\" \"**/src/**/*.{js,jsx,ts,tsx,json}\"",
     "storybook": "cd storybook && npm run storybook",
-    "build-storybook": "cd storybook && build-storybook -s public"
+    "build-storybook": "cd storybook && build-storybook -s public",
+    "cypress": "cd apps/movie-magic && npm run cypress"
   },
   "devDependencies": {
     "@code-shaper/express": "^0.0.14",
@@ -30,14 +31,14 @@
     "@code-shaper/typescript": "^0.0.14",
     "@movie-magic/react-patterns": "*",
     "husky": "^8.0.1",
-    "lint-staged": "^12.4.2",
-    "prettier": "^2.6.2",
+    "lint-staged": "^13.0.1",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "turbo": "latest"
   },
   "overrides": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json}": "prettier --write"
