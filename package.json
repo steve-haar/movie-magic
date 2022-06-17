@@ -21,14 +21,15 @@
     "format": "prettier --write \"**/README.md\" \"**/src/**/*.{js,jsx,ts,tsx,json}\"",
     "storybook": "cd storybook && npm run storybook",
     "build-storybook": "cd storybook && build-storybook -s public",
-    "cypress": "cd apps/movie-magic && npm run cypress"
+    "cypress": "cd apps/movie-magic-react && npm run cypress"
   },
   "devDependencies": {
-    "@code-shaper/express": "^0.0.14",
-    "@code-shaper/plugin": "^0.0.14",
-    "@code-shaper/react": "^0.0.14",
-    "@code-shaper/shaper-utils": "^0.0.15",
-    "@code-shaper/typescript": "^0.0.14",
+    "@code-shaper/express": "latest",
+    "@code-shaper/plugin": "latest",
+    "@code-shaper/react": "latest",
+    "@code-shaper/remix": "latest",
+    "@code-shaper/shaper-utils": "latest",
+    "@code-shaper/typescript": "latest",
     "@movie-magic/react-patterns": "*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",

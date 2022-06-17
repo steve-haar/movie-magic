@@ -1,6 +1,6 @@
 {
-  "name": "@movie-magic/movie-magic",
-  "description": "Movie Magic",
+  "name": "@movie-magic/movie-magic-react",
+  "description": "Movie Magic | React",
   "private": true,
   "version": "0.0.1",
   "scripts": {
