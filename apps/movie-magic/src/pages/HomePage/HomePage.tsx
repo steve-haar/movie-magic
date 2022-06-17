@@ -7,7 +7,7 @@ export function HomePage() {
     <React.Fragment>
       <Header />
       <div className="p-3">
-        <div className="card p-2">
+        <div className="card p-3">
           <MovieListContainer />
         </div>
       </div>

@@ -19,19 +19,19 @@ export function Button({
     classes.push(rootClass);
   }
 
-  classes.push('button');
+  classes.push('button button--contained button--small');
 
   switch (color) {
     case 'default': {
-      classes.push('button--default');
+      classes.push('button--contained-default');
       break;
     }
     case 'primary': {
-      classes.push('button--primary');
+      classes.push('button--contained-primary');
       break;
     }
     case 'secondary': {
-      classes.push('button--secondary');
+      classes.push('button--contained-secondary');
       break;
     }
   }
