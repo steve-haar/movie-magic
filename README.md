@@ -24,7 +24,7 @@ apps:
 
 1. http://localhost:3000/: Movie Magic | React
 2. http://localhost:3001/: Movie Magic | Next.js (Under construction)
-3. http://localhost:3002/: Movie Magic | Remix (Under construction)
+3. http://localhost:3002/: Movie Magic | Remix
 
 Note that the React app fetches mock data from MSW, whereas the other two apps
 fetch real data from the movie-magic-api.
