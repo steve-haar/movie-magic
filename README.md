@@ -15,9 +15,8 @@ Code Shaper docs.
 # Run ci in the root directory to install dependencies
 npm ci
 
-# Run a full build to make sure libraries are available for the apps
+# Run a full build to make sure libraries are available to the apps
 npm run build
-
 
 # Run the apps
 npm run dev
