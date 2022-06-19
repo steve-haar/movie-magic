@@ -1,11 +1,30 @@
 # Movie Magic
 
-An example of using Code Shaper to generate a React app. To see step-by-step
-instructions to create this app, visit
+This is an example of using Code Shaper to generate applications using the
+following frameworks:
+
+1. [React](https://reactjs.org/)
+2. [Next.js](https://nextjs.org/)
+3. [Remix](https://remix.run/)
+4. [Express](https://expressjs.com/)
+
+All applications are created inside a monorepo, working in harmony and sharing
+common packages.
+
+To see step-by-step instructions for creating these apps, visit
 [Getting Started](https://www.code-shaper.dev/docs/getting-started/overview) in
 Code Shaper docs.
 
 ![Home Page](assets/home-page.png)
+
+## Architecture
+
+The repository contains three web applications created using React, Next.js and
+Remix. They all depend on a package called `ui-lib` for common React components.
+They also depend on an Express app, called `movie-magic-api`, which provides a
+RESTful API for fetching movie data.
+
+![Architecture](assets/architecture.png)
 
 ## Building Movie Magic
 
