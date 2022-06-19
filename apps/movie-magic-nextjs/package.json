@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
+    "test": "echo Tests disabled due to https://github.com/vercel/next.js/issues/35634",
     "clean": "rimraf .turbo node_modules .next out build"
   },
   "dependencies": {
