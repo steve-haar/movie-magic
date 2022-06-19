@@ -12,6 +12,7 @@
     "clean": "rimraf .turbo node_modules build public/build coverage test-output"
   },
   "dependencies": {
+    "@movie-magic/ui-lib": "*",
     "@remix-run/node": "^1.6.0",
     "@remix-run/react": "^1.6.0",
     "@remix-run/serve": "^1.6.0",

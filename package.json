@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@code-shaper/express": "latest",
+    "@code-shaper/nextjs": "latest",
     "@code-shaper/plugin": "latest",
     "@code-shaper/react": "latest",
     "@code-shaper/remix": "latest",

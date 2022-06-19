@@ -23,7 +23,7 @@ Open browser windows at each of the following URLs to see the respective demo
 apps:
 
 1. http://localhost:3000/: Movie Magic | React
-2. http://localhost:3001/: Movie Magic | Next.js (Under construction)
+2. http://localhost:3001/: Movie Magic | Next.js
 3. http://localhost:3002/: Movie Magic | Remix
 
 Note that the React app fetches mock data from MSW, whereas the other two apps
