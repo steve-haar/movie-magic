@@ -12,10 +12,14 @@ Code Shaper docs.
 ### Development Build
 
 ```shell
-# In the root directory, install dependencies
+# Run ci in the root directory to install dependencies
 npm ci
 
-# Run the app
+# Run a full build to make sure libraries are available for the apps
+npm run build
+
+
+# Run the apps
 npm run dev
 ```
 
@@ -35,7 +39,7 @@ fetch real data from the movie-magic-api.
 
 ### Production Build
 
-To build all apps and packages, run the following command:
+To build all packages and apps for production, run the following command:
 
 ```shell
 npm ci
@@ -97,7 +101,7 @@ npm run format
 
 ## Running the Custom Plugin
 
-If you have not installed Code Shaper, first install it:
+If you have not installed Code Shaper, install it first:
 
 ```shell
 npm install -g code-shaper
