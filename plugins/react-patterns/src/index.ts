@@ -20,7 +20,7 @@ registerGenerator(fetchHookGenerator);
 const reactPatternsPlugin: Plugin = {
   id: '@movie-magic/react-patterns',
   name: 'React Patterns',
-  description: 'generates react-patterns artifacts',
+  description: 'generates React Patterns artifacts',
   run: async (inputOptions: Options) => {
     const generator = await selectGenerator(generators, inputOptions);
     if (!generator) {
