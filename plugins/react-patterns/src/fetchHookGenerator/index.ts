@@ -14,7 +14,7 @@ export const fetchHookGenerator: Generator = {
   generate: generateFetchHook,
 };
 
-async function generateFetchHook(inputOptions: Options) {
+async function generateFetchHook(rootDir: string, inputOptions: Options) {
   const questions = [
     {
       type: 'input',
@@ -31,7 +31,7 @@ async function generateFetchHook(inputOptions: Options) {
       name: 'parentDir',
       pageSize: 20,
       message: 'Parent directory?',
-      basePath: '.',
+      basePath: rootDir,
     },
   ];
 
