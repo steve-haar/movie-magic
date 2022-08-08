@@ -1,5 +1,5 @@
+import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useQuery } from 'react-query';
 
 const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -8,5 +8,5 @@ function fetch<%= itemNamePascalCase %>(): Promise<<%= returnType %>> {
 }
 
 export function <%= hookName %>() {
-  return useQuery('<%= itemNameCamelCase %>', fetch<%= itemNamePascalCase %>);
+  return useQuery(['<%= itemNameCamelCase %>'], fetch<%= itemNamePascalCase %>);
 }
