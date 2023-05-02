@@ -1,11 +1,19 @@
-import { Button } from '@movie-magic/ui-lib';
-import type { Movie } from '../../models';
+'use client';
 
-interface MovieListProps {
-  movies: Array<Movie>;
+import { Button } from '@movie-magic/ui-lib';
+import type { Movie } from '@/models';
+
+async function getMovies() {
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+  console.log('----> API_URL', API_URL);
+  const resMovies = await fetch(`${API_URL}/top-10-movies`);
+  // returns a promise that resolves to movies in JSON format
+  return resMovies.json();
 }
 
-export function MovieList({ movies }: MovieListProps) {
+export async function MovieList() {
+  const movies = await getMovies();
+
   return (
     <table data-testid="movie-table">
       <thead>
@@ -18,7 +26,7 @@ export function MovieList({ movies }: MovieListProps) {
         </tr>
       </thead>
       <tbody>
-        {movies.map((movie, index) => (
+        {movies.map((movie: Movie, index: number) => (
           <tr key={movie.name}>
             <td className="text-center">{index + 1}</td>
             <td>{movie.name}</td>

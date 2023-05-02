@@ -1,28 +1,31 @@
-import { Story, Meta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 
-export default {
+const meta = {
   title: 'Components/Button',
   component: Button,
-  argTypes: { onClick: { action: 'clicked' } },
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof Button>;
 
-const Template: Story = (args) => {
-  return (
-    <Button
-      rootClass={args.rootClass}
-      color={args.color}
-      onClick={args.onClick}
-    >
-      {args.text}
-    </Button>
-  );
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const DefaultButton: Story = {
+  args: {
+    children: 'Button',
+  },
 };
 
-export const ButtonStory = Template.bind({});
-ButtonStory.storyName = 'Button';
-ButtonStory.args = {
-  text: 'Button',
-  rootClass: '',
-  color: 'primary',
+export const PrimaryButton: Story = {
+  args: {
+    color: 'primary',
+    children: 'Button',
+  },
+};
+
+export const SecondaryButton: Story = {
+  args: {
+    color: 'secondary',
+    children: 'Button',
+  },
 };

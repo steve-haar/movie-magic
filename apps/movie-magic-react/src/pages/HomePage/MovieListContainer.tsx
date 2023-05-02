@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MovieList } from '../../components';
+import { MovieList } from '@/components/MovieList';
 import { useMovies } from './useMovies';
 
 export function MovieListContainer() {

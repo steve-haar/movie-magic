@@ -1,4 +1,8 @@
-module.exports = {
+import type { StorybookConfig } from '@storybook/react-vite';
+import { mergeConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
+
+const config: StorybookConfig = {
   stories: [
     '../../packages/*/src/**/*.stories.mdx',
     '../../packages/*/src/**/*.stories.@(js|jsx|ts|tsx)',
@@ -11,8 +15,18 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-a11y',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: '@storybook/builder-webpack5',
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
+  },
+  docs: {
+    autodocs: 'tag',
+  },
+  async viteFinal(config, { configType }) {
+    return mergeConfig(config, {
+      plugins: [tsconfigPaths()],
+    });
   },
 };
+
+export default config;

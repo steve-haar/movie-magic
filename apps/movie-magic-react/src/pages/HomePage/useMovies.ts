@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { Movie } from '../../models';
+import { Movie } from '@/models';
 
 const apiUrl = import.meta.env.VITE_API_URL;
 

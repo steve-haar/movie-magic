@@ -1,5 +1,5 @@
 import { Button } from '@movie-magic/ui-lib';
-import { Movie } from '../../models';
+import { Movie } from '@/models';
 
 interface MovieListProps {
   movies: Array<Movie>;
