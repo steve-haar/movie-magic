@@ -5,27 +5,24 @@ const meta = {
   title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
+  argTypes: {
+    color: {
+      description: 'The color of the component',
+      control: 'radio',
+      options: ['default', 'primary', 'secondary'],
+      table: {
+        defaultValue: { summary: 'default' },
+      },
+    },
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const DefaultButton: Story = {
-  args: {
-    children: 'Button',
-  },
-};
-
-export const PrimaryButton: Story = {
+export const Basic = {
   args: {
     color: 'primary',
     children: 'Button',
   },
-};
-
-export const SecondaryButton: Story = {
-  args: {
-    color: 'secondary',
-    children: 'Button',
-  },
-};
+} satisfies Story;

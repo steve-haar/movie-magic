@@ -1,22 +1,21 @@
 import * as React from 'react';
 
-interface ButtonProps {
-  rootClass?: string;
+type ReactButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+interface ButtonProps extends ReactButtonProps {
   color?: 'default' | 'primary' | 'secondary';
-  children?: React.ReactNode;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export function Button({
-  rootClass,
+  className,
   color = 'default',
   children,
   onClick,
 }: ButtonProps) {
   const classes = [];
 
-  if (rootClass) {
-    classes.push(rootClass);
+  if (className) {
+    classes.push(className);
   }
 
   classes.push('button button--contained button--small');
