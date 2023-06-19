@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import { Button } from './Button';
 
 describe('<Button />', () => {
-  test('colors render correctly', () => {
+  it('should render correct colors', () => {
     const { asFragment } = render(
       <div>
         <Button color="default">Submit</Button>
@@ -13,8 +13,8 @@ describe('<Button />', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('class can be added via rootClass prop', () => {
-    const { asFragment } = render(<Button rootClass="ml-2">Submit</Button>);
+  test('should allow to add a class using className prop', () => {
+    const { asFragment } = render(<Button className="ml-2">Submit</Button>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

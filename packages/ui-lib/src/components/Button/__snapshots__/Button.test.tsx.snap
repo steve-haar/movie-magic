@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> class can be added via rootClass prop 1`] = `
+exports[`<Button /> should allow to add a class using className prop 1`] = `
 <DocumentFragment>
   <button
     class="ml-2 button button--contained button--small button--contained-default"
@@ -10,7 +10,7 @@ exports[`<Button /> class can be added via rootClass prop 1`] = `
 </DocumentFragment>
 `;
 
-exports[`<Button /> colors render correctly 1`] = `
+exports[`<Button /> should render correct colors 1`] = `
 <DocumentFragment>
   <div>
     <button
