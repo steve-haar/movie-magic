@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/react';
 
 // Import any required css here
-import '../../packages/ui-lib/src/styles/main.css';
+import '@movie-magic/ui-lib/src/styles/main.css';
 
 const preview: Preview = {
   parameters: {
