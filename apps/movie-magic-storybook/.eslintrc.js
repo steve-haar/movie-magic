@@ -5,5 +5,5 @@ module.exports = {
     es2020: true,
     node: true,
   },
-  extends: ['lenient', 'plugin:storybook/recommended'],
+  extends: ['custom', 'plugin:storybook/recommended'],
 };

@@ -38,7 +38,7 @@
     "@vitejs/plugin-react": "^4.0.1",
     "cypress": "^12.15.0",
     "eslint": "^8.43.0",
-    "eslint-config-lenient": "*",
+    "eslint-config-custom": "*",
     "jest": "^29.5.0",
     "jest-config-custom": "*",
     "jest-environment-jsdom": "^29.5.0",

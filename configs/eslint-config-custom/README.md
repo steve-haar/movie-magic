@@ -1,14 +1,28 @@
-# eslint-config-strict
+# eslint-config-custom
 
-This package publishes a shared ESLint configuration called
-`eslint-config-strict` from which all other `.eslintrc.js`'s inherit.
+This package publishes 3 shared ESLint configurations from which all other
+`.eslintrc.js`'s inherit.
+
+1. `eslint-config-custom`: This is the default configuration and points to
+   `eslint-config-lenient`.
+2. `eslint-config-lenient`: A rather lenient configuration which can be used
+   with code bases that don't follow very opinionated coding conventions.
+3. `eslint-config-strict`: A stricter configuration intended for code bases that
+   follow very opinionated coding conventions.
+
+To switch from `lenient` to `strict` configuration, simply change line 1 in
+`./index.js` to `module.exports = require('./strict');`. This will change the
+entire repo to enforce strict coding conventions. You can also opt to switch
+over gradually by specifying `strict` mode one workspace at a time. To do this,
+change the `.eslintrc.js` file of the desired workspace to extend
+`custom/strict` instead of `custom`.
 
 ## Plugins
 
 This config pulls in the following eslint rules/plugins. In addition to these
 plugins, there are a few customizations that have been made to select individual
 rules. These customizations and all rules used are clearly marked in the
-package's [index.js](index.js).
+package's [lenient.js](lenient.js) & [strict.js](strict.js).
 
 ### eslint
 

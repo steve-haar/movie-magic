@@ -5,6 +5,7 @@
     "nextjs",
     "postdeploy",
     "tailwindcss",
-    "tanstack"
+    "tanstack",
+    "tsup"
   ]
 }

@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['lenient'],
+  extends: ['custom'],
   env: {
     node: true,
   },

@@ -32,7 +32,7 @@
     "@types/morgan": "^1.9.4",
     "@types/node": "^18.16.18",
     "eslint": "^8.43.0",
-    "eslint-config-lenient": "*",
+    "eslint-config-custom": "*",
     "jest": "^29.5.0",
     "jest-config-custom": "*",
     "nodemon": "^2.0.22",
