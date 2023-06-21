@@ -1,8 +1,7 @@
 # eslint-config-strict
 
 This package publishes a shared ESLint configuration called
-`eslint-config-strict` from which all other `.eslintrc.js`'s
-inherit.
+`eslint-config-strict` from which all other `.eslintrc.js`'s inherit.
 
 ## Plugins
 

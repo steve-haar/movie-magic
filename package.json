@@ -32,7 +32,7 @@
     "_clean:root": "rimraf node_modules",
     "_fix:rest": "turbo run fix",
     "_fix:root": "run-s _lint:root:fix _format:root:fix",
-    "_format:root": "prettier --list-different '**/*.{js,jsx,ts,tsx,json,md}' '!apps/**/*.*' '!packages/**/*.*'",
+    "_format:root": "prettier --list-different '**/*.{js,jsx,ts,tsx,json,md}' '!apps/**/*.*' '!packages/**/*.*' '!plugins/**/*.*'",
     "_format:root:fix": "npm run --silent _format:root -- --write",
     "_lint:root": "eslint '**/*.{js,jsx,ts,tsx}' --ignore-pattern '/apps/' --ignore-pattern '/packages/'",
     "_lint:root:fix": "npm run --silent _lint:root -- --fix"

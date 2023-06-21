@@ -1,10 +1,10 @@
 {
-    "cSpell.words": [
-        "commitlint",
-        "copyfiles",
-        "nextjs",
-        "postdeploy",
-        "tailwindcss",
-        "tanstack"
-    ]
+  "cSpell.words": [
+    "commitlint",
+    "copyfiles",
+    "nextjs",
+    "postdeploy",
+    "tailwindcss",
+    "tanstack"
+  ]
 }
