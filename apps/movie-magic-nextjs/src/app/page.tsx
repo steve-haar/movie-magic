@@ -11,7 +11,6 @@ export default function Home() {
           <h1 className="text-2xl font-semibold mb-2">
             Top 10 Movies Of All Time
           </h1>
-          {/* @ts-expect-error Client Component https://github.com/vercel/next.js/issues/42292 */}
           <MovieList />
         </div>
       </div>

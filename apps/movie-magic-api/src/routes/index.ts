@@ -1,5 +1,5 @@
-import express from 'express';
+import { Router } from 'express';
 import { moviesRouter } from './moviesRouter';
 
-export const rootRouter = express.Router();
+export const rootRouter = Router();
 rootRouter.use('/top-10-movies', moviesRouter);

@@ -4,10 +4,13 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "dev": "storybook dev -p 6006",
     "build": "storybook build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "clean": "rimraf .turbo node_modules storybook-static"
+    "clean": "rimraf .turbo node_modules storybook-static",
+    "dev": "storybook dev -p 6006",
+    "format": "prettier --list-different '**/*.{js,jsx,ts,tsx,json,md}'",
+    "format:fix": "npm run format -- --write",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "@movie-magic/movie-magic-react": "*",
@@ -28,9 +31,9 @@
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.60.0",
-    "@vitejs/plugin-react": "^4.0.0",
+    "@vitejs/plugin-react": "^4.0.1",
     "eslint": "^8.43.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-config-lenient": "*",
     "eslint-plugin-storybook": "^0.6.12",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.22",

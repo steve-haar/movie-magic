@@ -1,7 +1,7 @@
-import express from 'express';
+import { Router } from 'express';
 import movies from './data/top-10-movies.json';
 
-export const moviesRouter = express.Router();
+export const moviesRouter = Router();
 
 /** get top 10 movies */
 moviesRouter.get('/', (_, res) => {
