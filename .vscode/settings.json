@@ -8,6 +8,7 @@
     "postdeploy",
     "tailwindcss",
     "tanstack",
+    "testid",
     "tsup"
   ]
 }

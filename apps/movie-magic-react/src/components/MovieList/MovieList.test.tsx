@@ -1,5 +1,5 @@
-import { render, screen } from '../../test/test-utils';
 import { MovieList } from './MovieList';
+import { render, screen } from '../../test/test-utils';
 
 const movies = [
   {
@@ -20,12 +20,12 @@ const movies = [
 ];
 
 describe('<MovieList />', () => {
-  test('renders correctly', async () => {
+  it('should renders correctly', async () => {
     render(<MovieList movies={movies} />);
 
     // expect 3 movies
     const movieTable = await screen.findByTestId('movie-table');
     const movieRows = movieTable.querySelectorAll('tbody tr');
-    expect(movieRows.length).toBe(movies.length);
+    expect(movieRows).toHaveLength(movies.length);
   });
 });

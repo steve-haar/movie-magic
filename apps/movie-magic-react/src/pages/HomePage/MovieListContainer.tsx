@@ -1,33 +1,31 @@
-import * as React from 'react';
-import { MovieList } from '@/components/MovieList';
 import { useMovies } from './useMovies';
+import { MovieList } from '@/components/MovieList';
+import * as React from 'react';
 
 export function MovieListContainer() {
-  const movies = useMovies();
+  const { data, error, isLoading } = useMovies();
 
-  if (movies.isLoading) {
+  if (isLoading) {
     return <div>Loading...</div>;
   }
 
-  if (movies.error) {
+  if (error !== undefined && error !== null) {
     return (
-      <h1 className="text-2xl font-semibold mb-2">
+      <h1 className="mb-2 text-2xl font-semibold">
         Error:
-        {movies.error instanceof Error
-          ? movies.error.message
-          : 'Something went wrong'}
+        {error instanceof Error ? error.message : 'Something went wrong'}
       </h1>
     );
   }
 
-  if (!movies.data) {
-    return <h1 className="text-2xl font-semibold mb-2">No movies found</h1>;
+  if (!data) {
+    return <h1 className="mb-2 text-2xl font-semibold">No movies found</h1>;
   }
 
   return (
     <React.Fragment>
-      <h1 className="text-2xl font-semibold mb-2">Top 10 Movies Of All Time</h1>
-      <MovieList movies={movies.data} />
+      <h1 className="mb-2 text-2xl font-semibold">Top 10 Movies Of All Time</h1>
+      <MovieList movies={data} />
     </React.Fragment>
   );
 }

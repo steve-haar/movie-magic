@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { Header } from '@/components/Header';
 import { MovieListContainer } from './MovieListContainer';
+import { Header } from '@/components/Header';
+import * as React from 'react';
 
 export function HomePage() {
   return (

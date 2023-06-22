@@ -1,8 +1,8 @@
+import type { Movie } from '@/models';
 import { Button } from '@movie-magic/ui-lib';
-import { Movie } from '@/models';
 
 interface MovieListProps {
-  movies: Array<Movie>;
+  movies: Movie[];
 }
 
 export function MovieList({ movies }: MovieListProps) {
@@ -14,7 +14,7 @@ export function MovieList({ movies }: MovieListProps) {
           <th>Name</th>
           <th className="text-center">Year</th>
           <th className="text-center">Rating</th>
-          <td></td>
+          <td />
         </tr>
       </thead>
       <tbody>
