@@ -21,6 +21,7 @@
     "commit": "cz",
     "dev": "turbo run dev --concurrency 11",
     "fix": "run-s _fix:root _fix:rest",
+    "format": "turbo run format",
     "graph": "turbo run build --graph",
     "lint": "turbo run lint",
     "postdeploy": "turbo run postdeploy",

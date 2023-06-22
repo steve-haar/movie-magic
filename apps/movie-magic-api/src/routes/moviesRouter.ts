@@ -1,5 +1,5 @@
-import { Router } from 'express';
 import movies from './data/top-10-movies.json';
+import { Router } from 'express';
 
 export const moviesRouter = Router();
 
