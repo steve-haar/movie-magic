@@ -1,17 +1,20 @@
+import { Button, buttonVariants, DefaultButtonProps } from './Button';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from './Button';
 
 const meta = {
   title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {
-    color: {
-      description: 'The color of the component',
+    className: {
+      description: 'Additional style to apply',
+    },
+    variant: {
+      description: 'The variant to use',
       control: 'radio',
-      options: ['default', 'primary', 'secondary'],
+      options: buttonVariants,
       table: {
-        defaultValue: { summary: 'default' },
+        defaultValue: { summary: DefaultButtonProps.variant },
       },
     },
   },
@@ -22,7 +25,18 @@ type Story = StoryObj<typeof meta>;
 
 export const Default = {
   args: {
-    color: 'primary',
     children: 'Button',
   },
+} satisfies Story;
+
+export const Variants = {
+  render: () => (
+    <div>
+      {buttonVariants.map((variant) => (
+        <Button className="mr-2" key={variant} variant={variant}>
+          Button
+        </Button>
+      ))}
+    </div>
+  ),
 } satisfies Story;

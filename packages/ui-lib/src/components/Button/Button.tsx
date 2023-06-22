@@ -1,42 +1,39 @@
-import * as React from 'react';
+import { clsx } from 'clsx';
+import type * as React from 'react';
 
 type ReactButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-interface ButtonProps extends ReactButtonProps {
-  color?: 'default' | 'primary' | 'secondary';
+export const buttonVariants = ['default', 'primary', 'secondary'] as const;
+export type ButtonVariant = (typeof buttonVariants)[number];
+
+export interface ButtonProps extends ReactButtonProps {
+  variant?: ButtonVariant;
 }
 
+export const DefaultButtonProps = {
+  variant: 'default',
+} as const;
+
+// ---------- Style Mappings ----------
+const baseStyles = 'button button--contained button--small';
+
+const variantStyles: Record<ButtonVariant, string> = {
+  default: 'button--contained-default',
+  primary: 'button--contained-primary',
+  secondary: 'button--contained-secondary',
+} as const;
+// ------------------------------------
+
 export function Button({
-  className,
-  color = 'default',
+  className, // eslint-disable-line react/prop-types
+  variant = DefaultButtonProps.variant,
   children,
-  onClick,
+  ...props
 }: ButtonProps) {
-  const classes = [];
-
-  if (className) {
-    classes.push(className);
-  }
-
-  classes.push('button button--contained button--small');
-
-  switch (color) {
-    case 'default': {
-      classes.push('button--contained-default');
-      break;
-    }
-    case 'primary': {
-      classes.push('button--contained-primary');
-      break;
-    }
-    case 'secondary': {
-      classes.push('button--contained-secondary');
-      break;
-    }
-  }
+  const styles = clsx(className, baseStyles, variantStyles[variant]);
 
   return (
-    <button className={classes.join(' ')} onClick={onClick}>
+    <button className={styles} {...props}>
       {children}
     </button>
   );

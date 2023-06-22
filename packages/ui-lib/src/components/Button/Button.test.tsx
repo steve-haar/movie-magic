@@ -1,19 +1,26 @@
-import { render } from '@testing-library/react';
-import { Button } from './Button';
+import { Button, buttonVariants } from './Button';
+import { render } from '../../test/test-utils';
 
 describe('<Button />', () => {
-  it('should render correct colors', () => {
+  it('should render correct default properties', () => {
+    const { asFragment } = render(<Button>Submit</Button>);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render correct variants', () => {
     const { asFragment } = render(
       <div>
-        <Button color="default">Submit</Button>
-        <Button color="primary">Submit</Button>
-        <Button color="secondary">Submit</Button>
+        {buttonVariants.map((variant) => (
+          <Button key={variant} variant={variant}>
+            Submit
+          </Button>
+        ))}
       </div>
     );
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('should allow to add a class using className prop', () => {
+  it('should allow to add a class using className prop', () => {
     const { asFragment } = render(<Button className="ml-2">Submit</Button>);
     expect(asFragment()).toMatchSnapshot();
   });

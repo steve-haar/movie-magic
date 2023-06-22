@@ -10,7 +10,17 @@ exports[`<Button /> should allow to add a class using className prop 1`] = `
 </DocumentFragment>
 `;
 
-exports[`<Button /> should render correct colors 1`] = `
+exports[`<Button /> should render correct default properties 1`] = `
+<DocumentFragment>
+  <button
+    class="button button--contained button--small button--contained-default"
+  >
+    Submit
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Button /> should render correct variants 1`] = `
 <DocumentFragment>
   <div>
     <button
