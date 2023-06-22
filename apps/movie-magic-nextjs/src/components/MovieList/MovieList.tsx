@@ -1,13 +1,18 @@
 'use client';
 
-import { Button } from '@movie-magic/ui-lib';
 import type { Movie } from '@/models';
+import { Button } from '@movie-magic/ui-lib';
 
-async function getMovies() {
+async function getMovies(): Promise<Movie[]> {
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
   console.log('----> API_URL', API_URL);
+  if (API_URL === undefined) {
+    return [];
+  }
+
   const resMovies = await fetch(`${API_URL}/top-10-movies`);
-  // returns a promise that resolves to movies in JSON format
+  // returns a promise that resolves to movies in JSON formatted array
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return resMovies.json();
 }
 
@@ -22,7 +27,7 @@ export async function MovieList() {
           <th>Name</th>
           <th className="text-center">Year</th>
           <th className="text-center">Rating</th>
-          <td></td>
+          <td />
         </tr>
       </thead>
       <tbody>
