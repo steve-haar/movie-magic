@@ -3,8 +3,8 @@
 This repository was bootstrapped with [Code Shaper](https://code-shaper.dev).
 
 It shows how Code Shaper can be used to create applications and services more
-efficiently compared to coding from scratch. We have provided sample
-applications using the following frameworks:
+efficiently. We have provided sample applications using the following
+frameworks:
 
 1. [React](https://reactjs.org/)
 2. [Next.js](https://nextjs.org/)
@@ -67,7 +67,7 @@ npm run lint             # runs the linter on all workspaces, useful for debuggi
 npm run test             # runs full build, lint, format, and all tests
 ```
 
-### Common Workflows
+## Common Workflows
 
 ### Production Build
 
@@ -98,13 +98,13 @@ npm install
 npm run dev
 ```
 
-## Running Unit Tests
+### Running Unit Tests
 
 ```shell
 npm test
 ```
 
-## Running End-to-End Tests
+### Running End-to-End Tests
 
 ```shell
 npm run dev # starts a local server hosting the react app
@@ -113,7 +113,7 @@ npm run dev # starts a local server hosting the react app
 npm run cypress
 ```
 
-## Linting, Formatting and Fixing Coding Issues
+### Linting, Formatting and Fixing Coding Issues
 
 ```shell
 npm run fix
@@ -125,7 +125,7 @@ npm run fix
 npm run ci-validate
 ```
 
-## Running the Custom Plugin
+### Running the Custom Plugin
 
 If you have not installed Code Shaper, install it first:
 
