@@ -80,11 +80,13 @@ const reactFixableRules = {
   'react/jsx-curly-spacing': 'error',
   'react/jsx-equals-spacing': 'error',
   'react/jsx-first-prop-new-line': 'error',
+  'react/jsx-fragments': 'error',
   'react/jsx-indent': 'error',
   'react/jsx-indent-props': 'error',
   'react/jsx-max-props-per-line': 'error',
   'react/jsx-newline': 'error',
   'react/jsx-no-leaked-render': 'error',
+  'react/jsx-no-useless-fragment': 'error',
   'react/jsx-one-expression-per-line': 'error',
   'react/jsx-props-no-multi-spaces': 'error',
   'react/jsx-sort-props': 'error',
@@ -94,6 +96,10 @@ const reactFixableRules = {
   'react/prefer-read-only-props': 'error',
   'react/self-closing-comp': 'error',
   'react/sort-prop-types': 'error',
+};
+
+const reactCustomRules = {
+  'react/jsx-no-useless-fragment': 'off',
 };
 
 const importFixableRules = {
@@ -119,6 +125,11 @@ const importCustomRules = {
   'import/order': ['error', { alphabetize: { order: 'asc' }, groups: [] }],
 };
 
+const testingLibraryFixableRules = {
+  'testing-library/no-global-regexp-flag-in-query': 'error',
+  'testing-library/prefer-wait-for': 'error',
+};
+
 const typescriptFixableRules = {
   '@typescript-eslint/consistent-type-exports': 'error',
   '@typescript-eslint/consistent-type-imports': 'error',
@@ -136,11 +147,6 @@ const typescriptFixableRules = {
   '@typescript-eslint/sort-type-constituents': 'error',
   '@typescript-eslint/strict-boolean-expressions': 'error',
   '@typescript-eslint/type-annotation-spacing': 'error',
-};
-
-const testingLibraryFixableRules = {
-  'testing-library/no-global-regexp-flag-in-query': 'error',
-  'testing-library/prefer-wait-for': 'error',
 };
 
 const typescriptCustomRules = {
@@ -216,6 +222,7 @@ module.exports = {
       parserOptions: { project: true },
       rules: {
         ...reactFixableRules,
+        ...reactCustomRules,
         ...typescriptFixableRules,
         ...typescriptCustomRules,
       },

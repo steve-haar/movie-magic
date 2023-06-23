@@ -4,7 +4,7 @@ import * as React from 'react';
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <>
       <Header />
       <div className="p-3">
         <div className="card p-3">
@@ -14,6 +14,6 @@ export default function Home() {
           <MovieList />
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 }

@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import type { RenderOptions } from '@testing-library/react';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import * as React from 'react';
+import type * as React from 'react';
 
 /*
  * This file re-exports everything from React Testing Library and then overrides
@@ -18,7 +18,7 @@ interface AllProvidersProps {
 }
 
 function AllProviders({ children }: AllProvidersProps) {
-  return <React.Fragment>{children}</React.Fragment>;
+  return <>{children}</>;
 }
 
 /**
