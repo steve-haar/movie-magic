@@ -69,7 +69,7 @@ npm run test             # runs full build, lint, format, and all tests
 
 ## Common Workflows
 
-### Production Build
+### Production build
 
 To build all packages and apps for production, run the following command:
 
@@ -78,7 +78,7 @@ npm ci
 npm run build
 ```
 
-### Clean Build
+### Clean build
 
 Removes all build artifacts and performs a clean build.
 
@@ -98,13 +98,13 @@ npm install
 npm run dev
 ```
 
-### Running Unit Tests
+### Running unit tests
 
 ```shell
 npm test
 ```
 
-### Running End-to-End Tests
+### Running end-to-end tests
 
 ```shell
 npm run dev # starts a local server hosting the react app
@@ -113,7 +113,7 @@ npm run dev # starts a local server hosting the react app
 npm run cypress
 ```
 
-### Linting, Formatting and Fixing Coding Issues
+### Linting, formatting and fixing coding issues
 
 ```shell
 npm run fix
@@ -125,7 +125,7 @@ npm run fix
 npm run ci-validate
 ```
 
-### Running the Custom Plugin
+### Running the custom plugin
 
 If you have not installed Code Shaper, install it first:
 
