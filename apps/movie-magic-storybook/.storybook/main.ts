@@ -22,7 +22,7 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
-  async viteFinal(config) {
+  viteFinal(config) {
     return mergeConfig(config, {
       plugins: [tsconfigPaths()],
     });
