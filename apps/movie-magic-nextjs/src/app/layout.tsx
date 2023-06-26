@@ -8,10 +8,14 @@ import './globals.css';
  */
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Movie Magic | Next.js',
-  description: 'Movie Magic | Next.js',
-};
+/*
+ * This is causing jest to fail when collecting coverage
+ * See https://github.com/vercel/next.js/issues/47299
+ * export const metadata = {
+ *   title: 'Movie Magic | Next.js',
+ *   description: 'Movie Magic | Next.js',
+ * };
+ */
 
 interface RootLayoutProps {
   children: React.ReactNode;

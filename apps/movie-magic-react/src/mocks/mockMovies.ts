@@ -1,6 +1,6 @@
-import { Movie } from '../models';
+import type { Movie } from '../models';
 
-export const mockMovies: Array<Movie> = [
+export const mockMovies: Movie[] = [
   {
     name: 'The Shawshank Redemption',
     year: 1994,
