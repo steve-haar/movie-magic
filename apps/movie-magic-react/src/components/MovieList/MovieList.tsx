@@ -1,7 +1,7 @@
 import type { Movie } from '@/models';
 import { Button } from '@movie-magic/ui-lib';
 
-interface MovieListProps {
+export interface MovieListProps {
   movies: Movie[];
 }
 
