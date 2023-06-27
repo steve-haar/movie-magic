@@ -38,7 +38,7 @@ npm run build  # run a full build to make sure libraries are built and available
 npm run dev    # run the apps
 ```
 
-Open browser windows at each of the following URLs to see the respective apps:
+Open browser windows at the following URLs to see the respective apps:
 
 1. http://localhost:3000/: Movie Magic | React
 2. http://localhost:3001/: Movie Magic | Next.js
